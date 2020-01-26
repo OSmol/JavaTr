@@ -25,7 +25,7 @@ public class UserService {
     public void registration(User user) throws ServiceException {
         if (new Validator().userExist(user.getName())) throw new UserExistException("User "+user.getName()+" Exist!");
         try {
-            userDao.add(user);
+            userDao.registration(user);
         } catch (DAOException e) {
             throw new ServiceException(e);
         }
