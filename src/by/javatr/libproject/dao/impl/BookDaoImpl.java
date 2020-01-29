@@ -1,7 +1,6 @@
 package by.javatr.libproject.dao.impl;
 
 import by.javatr.libproject.dao.BookDAO;
-import by.javatr.libproject.dao.LibraryDAO;
 import by.javatr.libproject.dao.exception.DAOException;
 import by.javatr.libproject.entity.Author;
 import by.javatr.libproject.entity.Book;
@@ -104,11 +103,6 @@ public class BookDaoImpl implements BookDAO {
             throw new DAOException(e);
         }
     }
-
-
-
-
-
 
 
 }

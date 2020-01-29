@@ -1,5 +1,8 @@
 package by.javatr.libproject.service;
 
+import by.javatr.libproject.service.impl.BookServiceImpl;
+import by.javatr.libproject.service.impl.UserServiceImpl;
+
 public class ServiceFactory {
     private ServiceFactory() {
     }
@@ -8,12 +11,12 @@ public class ServiceFactory {
         return ServiceFactoryHolder.instance;
     }
 
-    public UserService getUserService() {
-        return new UserService();
+    public UserServiceImpl getUserService() {
+        return new UserServiceImpl();
     }
 
-    public BookService getBookService() {
-        return new BookService();
+    public BookServiceImpl getBookService() {
+        return new BookServiceImpl();
     }
 
     private static class ServiceFactoryHolder {

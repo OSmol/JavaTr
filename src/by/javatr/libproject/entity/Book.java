@@ -1,12 +1,17 @@
 package by.javatr.libproject.entity;
 
-import java.util.List;
-
 public class Book {
     private int id;
     private String name;
     private Author author;
     private int publish;
+
+    public Book(int id, String name, Author author, int publish) {
+        this.id = id;
+        this.name = name;
+        this.author = author;
+        this.publish = publish;
+    }
 
     public Author getAuthor() {
         return author;
@@ -14,13 +19,6 @@ public class Book {
 
     public void setAuthor(Author author) {
         this.author = author;
-    }
-
-    public Book(int id, String name, Author author, int publish) {
-        this.id = id;
-        this.name = name;
-        this.author = author;
-        this.publish = publish;
     }
 
     @Override
@@ -51,7 +49,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return  "id=" + id +
+        return "id=" + id +
                 ", name='" + name + '\'' +
                 ", author=" + author +
                 ", publish=" + publish;
@@ -72,7 +70,6 @@ public class Book {
     public void setName(String name) {
         this.name = name;
     }
-
 
 
     public int getPublish() {

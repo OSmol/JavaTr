@@ -1,43 +1,37 @@
 package by.javatr.libproject.controller.command.impl;
 
 import by.javatr.libproject.controller.command.Command;
-import by.javatr.libproject.dao.DaoFactory;
-import by.javatr.libproject.dao.impl.BookDaoImpl;
-import by.javatr.libproject.dao.impl.UserDaoImpl;
 import by.javatr.libproject.entity.Book;
-import by.javatr.libproject.service.BookService;
 import by.javatr.libproject.service.ServiceFactory;
 import by.javatr.libproject.service.exception.ServiceException;
-
-import java.io.IOException;
+import by.javatr.libproject.service.impl.BookServiceImpl;
 
 public class ShowBook implements Command {
     @Override
     public String execute(String request) {
         String response = null;
         ServiceFactory serviceFactory = ServiceFactory.getInstance();
-        BookService bookService = serviceFactory.getBookService();
+        BookServiceImpl bookServiceImpl = serviceFactory.getBookService();
 
         if ((request.isEmpty()) || (request == null)) {
 
             StringBuilder sb = new StringBuilder();
 
             try {
-                for (Book item:bookService.findAll()) {
+                for (Book item : bookServiceImpl.findAll()) {
                     sb.append(item.toString());
                     sb.append('\n');
                     response = sb.toString();
                 }
             } catch (ServiceException e) {
-                e.printStackTrace();
+                response = e.getMessage();
             }
 
-        }
-        else {
+        } else {
             try {
-                response = bookService.findByName(request).toString();
+                response = bookServiceImpl.findByName(request).toString();
             } catch (ServiceException e) {
-                e.printStackTrace();
+                response = e.getMessage();
             }
         }
         return response;

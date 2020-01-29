@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="694929af-cf51-47f3-8e18-d522979bd18d" name="Default Changelist" comment="" />
+    <list default="true" id="694929af-cf51-47f3-8e18-d522979bd18d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UserFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/AddBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/AddBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/DeleteBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/DeleteBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/Registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/ShowBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/ShowBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/SignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/LibraryDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/impl/BookDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/impl/BookDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/ServiceFactory$ServiceFactoryHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/ServiceFactory$ServiceFactoryHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/ServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/ServiceFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/Validator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/exception/BookIDExistException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/exception/BookIDExistException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/CommandName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/CommandName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/AddBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/DeleteBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/DeleteBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/ShowBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/ShowBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/dao/LibraryDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/dao/impl/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/dao/impl/BookDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/validator/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/exception/BookIDExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/exception/BookIDExistException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/exception/InvalidLoginException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/exception/InvalidPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/exception/InvalidPasswordException.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +110,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

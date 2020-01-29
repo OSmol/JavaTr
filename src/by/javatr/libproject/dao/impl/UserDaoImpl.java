@@ -1,6 +1,5 @@
 package by.javatr.libproject.dao.impl;
 
-import by.javatr.libproject.dao.LibraryDAO;
 import by.javatr.libproject.dao.UserDAO;
 import by.javatr.libproject.dao.exception.DAOException;
 import by.javatr.libproject.entity.User;
@@ -21,7 +20,7 @@ public class UserDaoImpl implements UserDAO {
     }
 
     public boolean signIn(String login, String password) throws DAOException {
-        try (FileReader fr = new FileReader(path)){
+        try (FileReader fr = new FileReader(path)) {
             Scanner scan = new Scanner(fr);
             int i = 1;
 
@@ -56,7 +55,7 @@ public class UserDaoImpl implements UserDAO {
     public List<User> getAll() throws DAOException {
         List<User> userList = new ArrayList<>();
 
-        try (FileReader fr = new FileReader(path)){
+        try (FileReader fr = new FileReader(path)) {
 
             Scanner scan = new Scanner(fr);
 
@@ -65,7 +64,7 @@ public class UserDaoImpl implements UserDAO {
 
                 String[] textSplit = text.split("//");
 
-                userList.add(new User(textSplit[0],textSplit[1]));
+                userList.add(new User(textSplit[0], textSplit[1]));
             }
 
         } catch (IOException e) {
