@@ -6,6 +6,7 @@ import by.javatr.libproject.dao.impl.BookDaoImpl;
 import by.javatr.libproject.entity.Book;
 import by.javatr.libproject.service.BookService;
 import by.javatr.libproject.service.exception.BookIDExistException;
+import by.javatr.libproject.service.exception.BookNotFoundException;
 import by.javatr.libproject.service.exception.ServiceException;
 import by.javatr.libproject.service.impl.validator.Validator;
 
@@ -48,7 +49,9 @@ public class BookServiceImpl implements BookService {
     @Override
     public Book findByName(String name) throws ServiceException {
         try {
-            return bookDao.findByName(name);
+            Book book = bookDao.findByName(name);
+            if (book == null) throw new BookNotFoundException("Book not found");
+            return book;
         } catch (DAOException e) {
             throw new ServiceException(e);
         }

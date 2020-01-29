@@ -70,7 +70,11 @@ public class BookDaoImpl implements BookDAO {
 
                 String[] textSplit = text.split("//");
 
-                bookList.add(new Book(Integer.parseInt(textSplit[0]), textSplit[1], new Author(textSplit[2]), Integer.parseInt(textSplit[3])));
+                try {
+                    bookList.add(new Book(Integer.parseInt(textSplit[0]), textSplit[1], new Author(textSplit[2]), Integer.parseInt(textSplit[3])));
+                } catch (NumberFormatException e) {
+                    throw new DAOException("File had invalid format", e);
+                }
             }
 
         } catch (IOException e) {
@@ -83,25 +87,15 @@ public class BookDaoImpl implements BookDAO {
     @Override
     public Book findByName(String name) throws DAOException {
         Book book = null;
+        List<Book> bookList = getAll();
 
-        try (FileReader fr = new FileReader(path)) {
-
-            Scanner scan = new Scanner(fr);
-
-            while (scan.hasNextLine()) {
-                String text = scan.nextLine();
-
-                String[] textSplit = text.split("//");
-
-                if (name.toUpperCase() == textSplit[1].toUpperCase()) {
-                    book = new Book(Integer.parseInt(textSplit[0]), textSplit[1], new Author(textSplit[2]), Integer.parseInt(textSplit[3]));
-                }
-
+        for (Book item : bookList) {
+            if (name.toUpperCase().equals(item.getName().toUpperCase())) {
+                return item;
             }
-            return book;
-        } catch (IOException e) {
-            throw new DAOException(e);
         }
+
+        return null;
     }
 
 
