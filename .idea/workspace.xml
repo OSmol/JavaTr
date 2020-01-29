@@ -3,19 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="694929af-cf51-47f3-8e18-d522979bd18d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BookFile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/AddBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/AddBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/DeleteBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/DeleteBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/ShowBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/ShowBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/SignIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/impl/BookDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/impl/BookDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/entity/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/exception/InvalidLoginException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/exception/InvalidPasswordException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/exception/InvalidPasswordException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/dao/impl/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/dao/impl/BookDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/AddBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/DeleteBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/DeleteBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/ShowBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/ShowBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/dao/factory/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/factory/ServiceFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/validator/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/validator/Validator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

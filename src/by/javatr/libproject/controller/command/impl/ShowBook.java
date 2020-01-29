@@ -2,16 +2,16 @@ package by.javatr.libproject.controller.command.impl;
 
 import by.javatr.libproject.controller.command.Command;
 import by.javatr.libproject.entity.Book;
-import by.javatr.libproject.service.ServiceFactory;
+import by.javatr.libproject.service.BookService;
 import by.javatr.libproject.service.exception.ServiceException;
-import by.javatr.libproject.service.impl.BookServiceImpl;
+import by.javatr.libproject.service.factory.ServiceFactory;
 
 public class ShowBook implements Command {
     @Override
     public String execute(String request) {
         String response = null;
         ServiceFactory serviceFactory = ServiceFactory.getInstance();
-        BookServiceImpl bookServiceImpl = serviceFactory.getBookService();
+        BookService bookServiceImpl = serviceFactory.getBookService();
 
         if ((request.isEmpty()) || (request == null)) {
 

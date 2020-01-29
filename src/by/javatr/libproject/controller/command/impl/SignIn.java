@@ -1,9 +1,9 @@
 package by.javatr.libproject.controller.command.impl;
 
 import by.javatr.libproject.controller.command.Command;
-import by.javatr.libproject.service.ServiceFactory;
+import by.javatr.libproject.service.UserService;
 import by.javatr.libproject.service.exception.ServiceException;
-import by.javatr.libproject.service.impl.UserServiceImpl;
+import by.javatr.libproject.service.factory.ServiceFactory;
 
 public class SignIn implements Command {
     @Override
@@ -23,7 +23,7 @@ public class SignIn implements Command {
         }
 
         ServiceFactory serviceFactory = ServiceFactory.getInstance();
-        UserServiceImpl userServiceImpl = serviceFactory.getUserService();
+        UserService userServiceImpl = serviceFactory.getUserService();
 
         try {
             if (userServiceImpl.signIn(login, password)) {

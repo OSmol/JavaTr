@@ -3,9 +3,9 @@ package by.javatr.libproject.controller.command.impl;
 import by.javatr.libproject.controller.command.Command;
 import by.javatr.libproject.entity.Author;
 import by.javatr.libproject.entity.Book;
-import by.javatr.libproject.service.ServiceFactory;
+import by.javatr.libproject.service.BookService;
 import by.javatr.libproject.service.exception.ServiceException;
-import by.javatr.libproject.service.impl.BookServiceImpl;
+import by.javatr.libproject.service.factory.ServiceFactory;
 
 public class AddBook implements Command {
     @Override
@@ -33,7 +33,7 @@ public class AddBook implements Command {
 
 
         ServiceFactory serviceFactory = ServiceFactory.getInstance();
-        BookServiceImpl bookServiceImpl = serviceFactory.getBookService();
+        BookService bookServiceImpl = serviceFactory.getBookService();
 
         try {
             bookServiceImpl.addBook(new Book(id, name, author, publish));

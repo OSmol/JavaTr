@@ -1,14 +1,15 @@
 package by.javatr.libproject.service.impl;
 
-import by.javatr.libproject.dao.DaoFactory;
 import by.javatr.libproject.dao.exception.DAOException;
+import by.javatr.libproject.dao.factory.DaoFactory;
 import by.javatr.libproject.dao.impl.BookDaoImpl;
 import by.javatr.libproject.entity.Book;
 import by.javatr.libproject.service.BookService;
 import by.javatr.libproject.service.exception.BookIDExistException;
 import by.javatr.libproject.service.exception.BookNotFoundException;
 import by.javatr.libproject.service.exception.ServiceException;
-import by.javatr.libproject.service.impl.validator.Validator;
+import by.javatr.libproject.service.impl.validator.impl.BookIdExistValidator;
+import by.javatr.libproject.service.impl.validator.impl.BookNotFoundValidator;
 
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void addBook(Book book) throws ServiceException {
-        if (new Validator().isBookIdExist(book.getId()))
+        if (new BookIdExistValidator().validate(book.getId()))
             throw new BookIDExistException("Book with " + (book.getId()) + "exist!");
         try {
             bookDao.addBook(book);
@@ -50,7 +51,7 @@ public class BookServiceImpl implements BookService {
     public Book findByName(String name) throws ServiceException {
         try {
             Book book = bookDao.findByName(name);
-            if (book == null) throw new BookNotFoundException("Book not found");
+            if (new BookNotFoundValidator().validate(book)) throw new BookNotFoundException("Book not found");
             return book;
         } catch (DAOException e) {
             throw new ServiceException(e);
