@@ -1,11 +1,10 @@
 package by.javatr.libproject.controller.command.impl;
 
 import by.javatr.libproject.controller.command.Command;
-import by.javatr.libproject.entity.User;
+import by.javatr.libproject.bean.User;
 import by.javatr.libproject.service.UserService;
 import by.javatr.libproject.service.factory.ServiceFactory;
 import by.javatr.libproject.service.exception.ServiceException;
-import by.javatr.libproject.service.impl.UserServiceImpl;
 
 public class Registration implements Command {
     @Override

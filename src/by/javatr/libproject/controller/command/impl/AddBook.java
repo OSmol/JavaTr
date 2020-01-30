@@ -1,8 +1,8 @@
 package by.javatr.libproject.controller.command.impl;
 
 import by.javatr.libproject.controller.command.Command;
-import by.javatr.libproject.entity.Author;
-import by.javatr.libproject.entity.Book;
+import by.javatr.libproject.bean.Author;
+import by.javatr.libproject.bean.Book;
 import by.javatr.libproject.service.BookService;
 import by.javatr.libproject.service.exception.ServiceException;
 import by.javatr.libproject.service.factory.ServiceFactory;

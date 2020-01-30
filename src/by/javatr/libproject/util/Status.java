@@ -1,4 +1,4 @@
-package by.javatr.libproject.entity;
+package by.javatr.libproject.util;
 
 public enum Status {
     ONLINE, OFFLINE

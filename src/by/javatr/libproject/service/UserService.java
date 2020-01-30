@@ -1,6 +1,6 @@
 package by.javatr.libproject.service;
 
-import by.javatr.libproject.entity.User;
+import by.javatr.libproject.bean.User;
 import by.javatr.libproject.service.exception.ServiceException;
 
 public interface UserService {

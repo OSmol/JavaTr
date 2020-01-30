@@ -1,6 +1,6 @@
 package by.javatr.libproject.service;
 
-import by.javatr.libproject.entity.Book;
+import by.javatr.libproject.bean.Book;
 import by.javatr.libproject.service.exception.ServiceException;
 
 import java.util.List;

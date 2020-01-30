@@ -1,10 +1,13 @@
-package by.javatr.libproject.entity;
+package by.javatr.libproject.bean;
 
 public class Author {
     private String name;
 
     public Author(String name) {
         this.name = name;
+    }
+
+    public Author() {
     }
 
     @Override
@@ -28,11 +31,11 @@ public class Author {
         return "name='" + name;
     }
 
-    public String getName() {
+    public final String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public final void setName(String name) {
         this.name = name;
     }
 }

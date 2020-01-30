@@ -2,8 +2,8 @@ package by.javatr.libproject.dao.impl;
 
 import by.javatr.libproject.dao.BookDAO;
 import by.javatr.libproject.dao.exception.DAOException;
-import by.javatr.libproject.entity.Author;
-import by.javatr.libproject.entity.Book;
+import by.javatr.libproject.bean.Author;
+import by.javatr.libproject.bean.Book;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -13,10 +13,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class BookDaoImpl implements BookDAO {
-    private String path;
+    private String path = "E:\\EpmLibProject\\src\\resources\\BookFile.txt";
 
-    public BookDaoImpl(String path) {
-        this.path = path;
+    public BookDaoImpl() {
     }
 
     @Override
@@ -33,7 +32,7 @@ public class BookDaoImpl implements BookDAO {
 
     @Override
     public void deleteBook(int id) throws DAOException {
-        List<Book> bookList;
+        List<Book> bookList = null;
 
         bookList = getAll();
 
@@ -50,6 +49,7 @@ public class BookDaoImpl implements BookDAO {
         for (Book item : bookList) {
             addBook(new Book(item.getId(), item.getName(), item.getAuthor(), item.getPublish()));
         }
+
     }
 
     @Override
@@ -90,12 +90,13 @@ public class BookDaoImpl implements BookDAO {
         List<Book> bookList = getAll();
 
         for (Book item : bookList) {
-            if (name.toUpperCase().equals(item.getName().toUpperCase())) {
-                return item;
+            if (name.equalsIgnoreCase(item.getName())) {
+                book = item;
+                break;
             }
         }
 
-        return null;
+        return book;
     }
 
 

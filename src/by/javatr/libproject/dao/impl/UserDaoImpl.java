@@ -2,7 +2,7 @@ package by.javatr.libproject.dao.impl;
 
 import by.javatr.libproject.dao.UserDAO;
 import by.javatr.libproject.dao.exception.DAOException;
-import by.javatr.libproject.entity.User;
+import by.javatr.libproject.bean.User;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -13,13 +13,12 @@ import java.util.Scanner;
 
 public class UserDaoImpl implements UserDAO {
 
-    private String path;
+    private String path = "E:\\EpmLibProject\\src\\resources\\UserFile.txt";
 
-    public UserDaoImpl(String path) {
-        this.path = path;
+    public UserDaoImpl() {
     }
 
-    public boolean signIn(String login, String password) throws DAOException {
+    public User findByName(String name) throws DAOException {
         try (FileReader fr = new FileReader(path)) {
             Scanner scan = new Scanner(fr);
             int i = 1;
@@ -27,12 +26,12 @@ public class UserDaoImpl implements UserDAO {
             while (scan.hasNextLine()) {
                 String text = scan.nextLine();
                 String[] textSplit = text.split("//");
-                if ((textSplit[0].equals(login)) && (textSplit[1].equals(password))) {
-                    return true;
+                if ((textSplit[0].equals(name))) {
+                    return new User(textSplit[0],textSplit[1]);
                 }
 
             }
-            return false;
+            return null;
 
         } catch (IOException e) {
             throw new DAOException(e);
@@ -52,6 +51,7 @@ public class UserDaoImpl implements UserDAO {
     }
 
 
+    @Override
     public List<User> getAll() throws DAOException {
         List<User> userList = new ArrayList<>();
 

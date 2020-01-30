@@ -1,4 +1,6 @@
-package by.javatr.libproject.entity;
+package by.javatr.libproject.bean;
+
+import by.javatr.libproject.util.Status;
 
 public class User {
     private String name;

@@ -1,4 +1,4 @@
-package by.javatr.libproject.entity;
+package by.javatr.libproject.bean;
 
 public class Book {
     private int id;
@@ -6,20 +6,32 @@ public class Book {
     private Author author;
     private int publish;
 
-    public Book(int id, String name, Author author, int publish) {
+    public Book(int id, Author author, int publish) {
         this.id = id;
-        this.name = name;
+        this.name = "anonymous";
         this.author = author;
         this.publish = publish;
     }
 
-    public Author getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(Author author) {
+    public Book(int id, String name, Author author) {
+        this.id = id;
+        this.name = name;
         this.author = author;
     }
+
+    public Book(int id, String name, Author author, int publish) {
+        this(id, name, author);
+        this.publish = publish;
+    }
+
+
+    public Book() {
+        this.id = 12354;
+        this.name = "name";
+        this.author = new Author("author");
+        this.publish = 123;
+    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -40,11 +52,10 @@ public class Book {
 
     @Override
     public int hashCode() {
-        return 31 +
-                (getAuthor() == null ? 1 : getAuthor().hashCode()) +
-                (getName() == null ? 1 : getName().hashCode()) +
-                getPublish() +
-                getId();
+        return 31 + (getAuthor() == null ? 1 : getAuthor().hashCode())
+                + (getName() == null ? 1 : getName().hashCode())
+                + getPublish()
+                + getId();
     }
 
     @Override
@@ -55,28 +66,36 @@ public class Book {
                 ", publish=" + publish;
     }
 
-    public int getId() {
+    public final Author getAuthor() {
+        return author;
+    }
+
+    public final void setAuthor(Author author) {
+        this.author = author;
+    }
+
+    public final int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public final void setId(int id) {
         this.id = id;
     }
 
-    public String getName() {
+    public final String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public final void setName(String name) {
         this.name = name;
     }
 
 
-    public int getPublish() {
+    public final int getPublish() {
         return publish;
     }
 
-    public void setPublish(int publish) {
+    public final void setPublish(int publish) {
         this.publish = publish;
     }
 }

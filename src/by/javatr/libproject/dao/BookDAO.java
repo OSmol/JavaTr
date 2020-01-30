@@ -1,7 +1,7 @@
 package by.javatr.libproject.dao;
 
 import by.javatr.libproject.dao.exception.DAOException;
-import by.javatr.libproject.entity.Book;
+import by.javatr.libproject.bean.Book;
 
 import java.util.List;
 

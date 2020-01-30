@@ -7,16 +7,24 @@ import by.javatr.libproject.dao.impl.UserDaoImpl;
 
 public class DaoFactory implements Factory {
 
+    private static class DAOFactoryHolder {
+        private final static DaoFactory instance = new DaoFactory();
+    }
+
+    public static DaoFactory getInstance() {
+        return DAOFactoryHolder.instance;
+    }
+
     public DaoFactory() {
     }
 
     @Override
-    public UserDAO getUserDAO(String path) {
-        return new UserDaoImpl(path);
+    public UserDAO getUserDAO() {
+        return new UserDaoImpl();
     }
 
     @Override
-    public BookDAO getBookDAO(String path) {
-        return new BookDaoImpl(path);
+    public BookDAO getBookDAO() {
+        return new BookDaoImpl();
     }
 }
