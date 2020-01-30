@@ -9,7 +9,7 @@ import by.javatr.libproject.service.exception.InvalidLoginException;
 import by.javatr.libproject.service.exception.InvalidPasswordException;
 import by.javatr.libproject.service.exception.ServiceException;
 import by.javatr.libproject.service.exception.UserExistException;
-import by.javatr.libproject.service.impl.validator.UserValidator;
+import by.javatr.libproject.service.validator.UserValidator;
 
 import java.util.List;
 

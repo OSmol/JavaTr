@@ -1,4 +1,4 @@
-package by.javatr.libproject.service.impl.validator;
+package by.javatr.libproject.service.validator;
 
 public class UserValidator {
     /**

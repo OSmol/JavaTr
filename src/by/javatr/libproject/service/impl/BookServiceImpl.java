@@ -6,7 +6,7 @@ import by.javatr.libproject.dao.factory.DaoFactory;
 import by.javatr.libproject.bean.Book;
 import by.javatr.libproject.service.BookService;
 import by.javatr.libproject.service.exception.*;
-import by.javatr.libproject.service.impl.validator.BookValidator;
+import by.javatr.libproject.service.validator.BookValidator;
 
 import java.util.List;
 
