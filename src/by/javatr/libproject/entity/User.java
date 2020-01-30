@@ -3,10 +3,20 @@ package by.javatr.libproject.entity;
 public class User {
     private String name;
     private String password;
+    private Status status;
 
     public User(String name, String password) {
         this.name = name;
         this.password = password;
+        status = Status.OFFLINE;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     @Override
@@ -15,6 +25,7 @@ public class User {
                 "{ " +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
+                ", password='" + status + '\'' +
                 '}';
     }
 
@@ -29,13 +40,20 @@ public class User {
         if (user.getPassword() == null) {
             if (getPassword() != null) return false;
         }
-        return getName().equals(user.getName()) &&
-                getPassword().equals(user.getPassword());
+        if (user.getStatus() == null) {
+            if (getStatus() != null) return false;
+        }
+        return getName().equals(user.getName())
+                && getPassword().equals(user.getPassword())
+                && getStatus().equals(user.getStatus());
     }
 
     @Override
     public int hashCode() {
-        return 31 + (name == null ? 1 : name.hashCode()) + (password == null ? 1 : name.hashCode());
+        return 31
+                + (name == null ? 1 : name.hashCode())
+                + (password == null ? 1 : name.hashCode())
+                + (status == null ? 1 : status.hashCode());
     }
 
 

@@ -3,17 +3,30 @@
   <component name="ChangeListManager">
     <list default="true" id="694929af-cf51-47f3-8e18-d522979bd18d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/AddBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/DeleteBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/DeleteBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/ShowBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/ShowBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/controller/command/impl/SignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/dao/factory/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/factory/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/BookFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/UserFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/AddBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/AddBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/DeleteBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/DeleteBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/Registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/ShowBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/ShowBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/SignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/DaoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/ServiceFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/ServiceFactory$ServiceFactoryHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/ServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/validator/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/validator/Validator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/runner/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/dao/factory/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/dao/factory/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/dao/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/dao/factory/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/factory/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/factory/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/factory/ServiceFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/BookServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/validator/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/validator/Validator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +37,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -37,6 +50,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\EpmLibProject\src\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,11 +70,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.javatr.libproject.Application" />
+      <option name="MAIN_CLASS_NAME" value="by.javatr.libproject.runner.Application" />
       <module name="EpmLibProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.javatr.libproject.*" />
+          <option name="PATTERN" value="by.javatr.libproject.runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

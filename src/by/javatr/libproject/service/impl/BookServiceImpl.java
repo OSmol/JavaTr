@@ -1,8 +1,8 @@
 package by.javatr.libproject.service.impl;
 
+import by.javatr.libproject.dao.BookDAO;
 import by.javatr.libproject.dao.exception.DAOException;
 import by.javatr.libproject.dao.factory.DaoFactory;
-import by.javatr.libproject.dao.impl.BookDaoImpl;
 import by.javatr.libproject.entity.Book;
 import by.javatr.libproject.service.BookService;
 import by.javatr.libproject.service.exception.BookIDExistException;
@@ -16,7 +16,7 @@ import java.util.List;
 public class BookServiceImpl implements BookService {
 
     private final DaoFactory daoFactory = new DaoFactory();
-    private final BookDaoImpl bookDao = daoFactory.getBookDAO("BookFile.txt");
+    private final BookDAO bookDao = daoFactory.getBookDAO("E:\\EpmLibProject\\src\\resources\\BookFile.txt");
 
     @Override
     public void addBook(Book book) throws ServiceException {

@@ -1,9 +1,14 @@
 package by.javatr.libproject.service.factory;
 
+import by.javatr.libproject.service.BookService;
+import by.javatr.libproject.service.UserService;
 import by.javatr.libproject.service.impl.BookServiceImpl;
 import by.javatr.libproject.service.impl.UserServiceImpl;
 
 public class ServiceFactory implements Factory {
+
+    private final UserService userService = new UserServiceImpl();
+    private final BookService bookService = new BookServiceImpl();
 
     private ServiceFactory() {
     }
@@ -13,13 +18,13 @@ public class ServiceFactory implements Factory {
     }
 
     @Override
-    public UserServiceImpl getUserService() {
-        return new UserServiceImpl();
+    public UserService getUserService() {
+        return userService;
     }
 
     @Override
-    public BookServiceImpl getBookService() {
-        return new BookServiceImpl();
+    public BookService getBookService() {
+        return bookService;
     }
 
     private static class ServiceFactoryHolder {

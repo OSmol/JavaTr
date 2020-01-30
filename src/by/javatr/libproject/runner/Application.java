@@ -1,4 +1,4 @@
-package by.javatr.libproject;
+package by.javatr.libproject.runner;
 
 import by.javatr.libproject.controller.Controller;
 
