@@ -8,6 +8,7 @@ public class Author {
     }
 
     public Author() {
+        name = "anonymous";
     }
 
     @Override

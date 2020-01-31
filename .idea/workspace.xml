@@ -3,33 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="694929af-cf51-47f3-8e18-d522979bd18d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/AddBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/AddBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/Registration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/ShowBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/controller/command/impl/ShowBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/BookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/BookDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/factory/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/factory/Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/factory/Factory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/impl/BookDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/impl/BookDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/entity/Author.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/entity/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/entity/Status.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/runner/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/runner/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/BookServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/validator/Validator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/validator/impl/BookIdExistValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/validator/impl/BookNotFoundValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EpmLibProject/by/javatr/libproject/service/impl/validator/impl/UserExistValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/validator/BookValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/validator/BookValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/service/impl/validator/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/service/validator/UserValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/UserFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/UserFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/bean/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/bean/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/libproject/bean/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/libproject/bean/Book.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

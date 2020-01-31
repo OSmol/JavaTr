@@ -6,9 +6,16 @@ public class Book {
     private Author author;
     private int publish;
 
+    public Book(int id, String name, int publish) {
+        this.id = id;
+        this.name = name;
+        this.publish = publish;
+        author = new Author();
+    }
+
     public Book(int id, Author author, int publish) {
         this.id = id;
-        this.name = "anonymous";
+        this.name = "default";
         this.author = author;
         this.publish = publish;
     }
@@ -17,10 +24,13 @@ public class Book {
         this.id = id;
         this.name = name;
         this.author = author;
+        publish = 0;
     }
 
     public Book(int id, String name, Author author, int publish) {
-        this(id, name, author);
+        this.id = id;
+        this.name = name;
+        this.author = author;
         this.publish = publish;
     }
 
