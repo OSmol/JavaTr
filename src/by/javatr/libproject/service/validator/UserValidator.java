@@ -2,9 +2,8 @@ package by.javatr.libproject.service.validator;
 
 public class UserValidator {
     /**
-     * login c ограничением 1-20 символов,
+     * login c ограничением 3-15 символов,
      * которыми могут быть буквы и цифры,
-     * символ подчеркивания, дефис,
      * первый символ обязательно буква
      */
     public static boolean validateLogin(String login) {
@@ -12,9 +11,8 @@ public class UserValidator {
     }
 
     /**
-     * password с ограничением 6-18 символов,
+     * password с ограничением 3-18 символов,
      * которыми могут быть буквы и цифры,
-     * символ подчеркивания, дефис,
      * первый символ обязательно буква
      */
     public static boolean validatePassword(String password) {

@@ -1,9 +1,10 @@
 package by.javatr.libproject.dao.impl;
 
-import by.javatr.libproject.dao.BookDAO;
-import by.javatr.libproject.dao.exception.DAOException;
 import by.javatr.libproject.bean.Author;
 import by.javatr.libproject.bean.Book;
+import by.javatr.libproject.dao.BookDAO;
+import by.javatr.libproject.dao.exception.DAOException;
+import by.javatr.libproject.dao.exception.DAOInvalidFormatException;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -22,7 +23,7 @@ public class BookDaoImpl implements BookDAO {
     public void addBook(Book book) throws DAOException {
         try (FileWriter fw = new FileWriter(path, true)) {
 
-            fw.write(book.getId() + "//" + book.getName() + "//" + book.getAuthor().getName() + "//" + book.getPublish() + "//");
+            fw.write(book.getId() + "//" + book.getName() + "//" + book.getAuthor().getName() + "//" + book.getPublish());
             fw.append('\n');
 
         } catch (IOException e) {
@@ -30,11 +31,15 @@ public class BookDaoImpl implements BookDAO {
         }
     }
 
+
     @Override
     public void deleteBook(int id) throws DAOException {
-        List<Book> bookList = null;
+        List<Book> bookList = removeBook(id, getAll());
+        updateFile(bookList);
+    }
 
-        bookList = getAll();
+
+    private List<Book> removeBook(int id, List<Book> bookList) {
 
         int i = 0;
         int temp = 0;
@@ -45,25 +50,36 @@ public class BookDaoImpl implements BookDAO {
             i++;
         }
         bookList.remove(temp);
+        return bookList;
+    }
 
-        for (Book item : bookList) {
-            addBook(new Book(item.getId(), item.getName(), item.getAuthor(), item.getPublish()));
+    @Override
+    public void updateBook(int id, Book book) throws DAOException {
+        List<Book> bookList = removeBook(id, getAll());
+        bookList.add(book);
+        updateFile(bookList);
+    }
+
+
+    private void updateFile(List<Book> bookList) throws DAOException {
+
+        try (FileWriter fw = new FileWriter(path, false)) {
+            for (Book item : bookList) {
+                fw.write(item.getId() + "//" + item.getName() + "//" + item.getAuthor().getName() + "//" + item.getPublish());
+                fw.append('\n');
+            }
+        } catch (IOException e) {
+            throw new DAOException(e);
         }
 
     }
 
-    @Override
-    public void updateBook(int id, Book book) {
-
-    }
 
     @Override
     public List<Book> getAll() throws DAOException {
         List<Book> bookList = new ArrayList<>();
 
-        try (FileReader fr = new FileReader(path)) {
-
-            Scanner scan = new Scanner(fr);
+        try (Scanner scan = new Scanner(new FileReader(path))) {
 
             while (scan.hasNextLine()) {
                 String text = scan.nextLine();
@@ -73,7 +89,7 @@ public class BookDaoImpl implements BookDAO {
                 try {
                     bookList.add(new Book(Integer.parseInt(textSplit[0]), textSplit[1], new Author(textSplit[2]), Integer.parseInt(textSplit[3])));
                 } catch (NumberFormatException e) {
-                    throw new DAOException("File had invalid format", e);
+                    throw new DAOInvalidFormatException("File had invalid format", e);
                 }
             }
 

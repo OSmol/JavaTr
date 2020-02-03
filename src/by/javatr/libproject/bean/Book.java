@@ -1,6 +1,10 @@
 package by.javatr.libproject.bean;
 
-public class Book {
+import java.io.Serializable;
+
+public class Book implements Serializable {
+    private static final long serialVersionUID = 6614321234L;
+
     private int id;
     private String name;
     private Author author;
@@ -36,10 +40,7 @@ public class Book {
 
 
     public Book() {
-        this.id = 12354;
-        this.name = "name";
-        this.author = new Author("author");
-        this.publish = 123;
+
     }
 
 

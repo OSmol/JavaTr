@@ -11,7 +11,7 @@ public interface BookDAO {
 
     void deleteBook(int id) throws DAOException;
 
-    void updateBook(int id, Book book);
+    void updateBook(int id, Book book) throws DAOException;
 
     List<Book> getAll() throws DAOException;
 

@@ -1,6 +1,10 @@
 package by.javatr.libproject.bean;
 
-public class Author {
+import java.io.Serializable;
+
+public class Author implements Serializable {
+    private static final long serialVersionUID = -9914321234L;
+
     private String name;
 
     public Author(String name) {
@@ -8,7 +12,7 @@ public class Author {
     }
 
     public Author() {
-        name = "anonymous";
+
     }
 
     @Override

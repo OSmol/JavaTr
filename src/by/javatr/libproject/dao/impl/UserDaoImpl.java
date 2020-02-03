@@ -1,8 +1,8 @@
 package by.javatr.libproject.dao.impl;
 
+import by.javatr.libproject.bean.User;
 import by.javatr.libproject.dao.UserDAO;
 import by.javatr.libproject.dao.exception.DAOException;
-import by.javatr.libproject.bean.User;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -19,31 +19,23 @@ public class UserDaoImpl implements UserDAO {
     }
 
     public User findByName(String name) throws DAOException {
-        try (FileReader fr = new FileReader(path)) {
-            Scanner scan = new Scanner(fr);
-            int i = 1;
+        List<User> userList = getAll();
+        User user = null;
 
-            while (scan.hasNextLine()) {
-                String text = scan.nextLine();
-                String[] textSplit = text.split("//");
-                if ((textSplit[0].equals(name))) {
-                    return new User(textSplit[0],textSplit[1]);
-                }
-
+        for (User item:userList) {
+            if (item.getName().equalsIgnoreCase(name)) {
+                user = item;
+                break;
             }
-            return null;
-
-        } catch (IOException e) {
-            throw new DAOException(e);
         }
 
-
+        return user;
     }
 
     @Override
     public void registration(User user) throws DAOException {
         try (FileWriter fw = new FileWriter(path, true)) {
-            fw.write(user.getName() + "//" + user.getPassword() + "//");
+            fw.write(user.getName() + "//" + user.getPassword());
             fw.append('\n');
         } catch (IOException e) {
             throw new DAOException(e);
@@ -55,15 +47,11 @@ public class UserDaoImpl implements UserDAO {
     public List<User> getAll() throws DAOException {
         List<User> userList = new ArrayList<>();
 
-        try (FileReader fr = new FileReader(path)) {
-
-            Scanner scan = new Scanner(fr);
+        try (Scanner scan = new Scanner(new FileReader(path))) {
 
             while (scan.hasNextLine()) {
                 String text = scan.nextLine();
-
                 String[] textSplit = text.split("//");
-
                 userList.add(new User(textSplit[0], textSplit[1]));
             }
 

@@ -1,8 +1,8 @@
 package by.javatr.libproject.service.validator;
 
 public class BookValidator {
+    
     public static boolean validateBookYear(int year) {
-
         String s = String.valueOf(year);
         return s.matches("\\d{1,4}$");
     }

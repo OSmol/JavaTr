@@ -12,6 +12,8 @@ public class Application {
         System.out.println("Hello, User! Its library project by Novikov A.S.");
 
         String request = null;
+
+
         for (; ; ) {
             System.out.println("Введите комманду:");
             request = scanner.nextLine();

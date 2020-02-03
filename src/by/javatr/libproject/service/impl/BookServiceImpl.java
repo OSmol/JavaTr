@@ -19,7 +19,7 @@ public class BookServiceImpl implements BookService {
     public void addBook(Book book) throws ServiceException {
         if (!BookValidator.validateAuthorName(book.getAuthor().getName())) throw new InvalidAuthorNameException("Author name is incorrect");
         if (!BookValidator.validateBookYear(book.getPublish())) throw new InvalidPublishException("Year of publishing is incorrect");
-        if (isBookIdExist(book.getId())) throw new BookIDExistException("Book with " + (book.getId()) + "exist!");
+        if (isBookIdExist(book.getId())) throw new BookIDExistException("Book with " + (book.getId()) + " id exist!");
         try {
             bookDao.addBook(book);
         } catch (DAOException e) {

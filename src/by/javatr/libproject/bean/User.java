@@ -2,15 +2,23 @@ package by.javatr.libproject.bean;
 
 import by.javatr.libproject.util.Status;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
+    private static final long serialVersionUID = 14321234L;
+
     private String name;
     private String password;
-    private Status status;
+    private transient Status status;
 
     public User(String name, String password) {
         this.name = name;
         this.password = password;
         status = Status.OFFLINE;
+    }
+
+    public User() {
+
     }
 
     public Status getStatus() {
