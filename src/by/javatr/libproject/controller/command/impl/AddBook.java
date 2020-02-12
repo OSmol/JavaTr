@@ -1,8 +1,8 @@
 package by.javatr.libproject.controller.command.impl;
 
-import by.javatr.libproject.controller.command.Command;
 import by.javatr.libproject.bean.Author;
 import by.javatr.libproject.bean.Book;
+import by.javatr.libproject.controller.command.Command;
 import by.javatr.libproject.service.BookService;
 import by.javatr.libproject.service.exception.ServiceException;
 import by.javatr.libproject.service.factory.ServiceFactory;
@@ -22,14 +22,13 @@ public class AddBook implements Command {
 
         String[] requestSplit = request.split(";");
 
-        try {
-            id = Integer.parseInt(requestSplit[0]);
-            name = requestSplit[1];
-            author = new Author(requestSplit[2]);
-            publish = Integer.parseInt(requestSplit[3]);
-        } catch (IndexOutOfBoundsException e) {
+        if (!checkSize(requestSplit, 4)) {
             return "invalid input parameters";
         }
+        id = Integer.parseInt(requestSplit[0]);
+        name = requestSplit[1];
+        author = new Author(requestSplit[2]);
+        publish = Integer.parseInt(requestSplit[3]);
 
 
         ServiceFactory serviceFactory = ServiceFactory.getInstance();

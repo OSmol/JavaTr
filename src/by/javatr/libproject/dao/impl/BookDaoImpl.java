@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class BookDaoImpl implements BookDAO {
-    private String path = "E:\\EpmLibProject\\src\\resources\\BookFile.txt";
+    private String path = ".\\resources\\BookFile.txt";
 
     public BookDaoImpl() {
     }

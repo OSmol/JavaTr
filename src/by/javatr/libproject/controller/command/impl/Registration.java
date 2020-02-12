@@ -1,10 +1,10 @@
 package by.javatr.libproject.controller.command.impl;
 
-import by.javatr.libproject.controller.command.Command;
 import by.javatr.libproject.bean.User;
+import by.javatr.libproject.controller.command.Command;
 import by.javatr.libproject.service.UserService;
-import by.javatr.libproject.service.factory.ServiceFactory;
 import by.javatr.libproject.service.exception.ServiceException;
+import by.javatr.libproject.service.factory.ServiceFactory;
 
 public class Registration implements Command {
     @Override
@@ -15,12 +15,13 @@ public class Registration implements Command {
 
         String[] requestSplit = request.split(";");
 
-        try {
-            login = requestSplit[0];
-            password = requestSplit[1];
-        } catch (IndexOutOfBoundsException e) {
+        if (!checkSize(requestSplit, 2)) {
             return "invalid input parameters";
         }
+
+        login = requestSplit[0];
+        password = requestSplit[1];
+
 
         ServiceFactory serviceFactory = ServiceFactory.getInstance();
         UserService userServiceImpl = serviceFactory.getUserService();

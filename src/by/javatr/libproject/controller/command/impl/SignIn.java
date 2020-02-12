@@ -15,12 +15,12 @@ public class SignIn implements Command {
 
         String[] requestSplit = request.split(";");
 
-        try {
-            login = requestSplit[0];
-            password = requestSplit[1];
-        } catch (IndexOutOfBoundsException e) {
+        if (!checkSize(requestSplit, 2)) {
             return "invalid input parameters";
         }
+
+        login = requestSplit[0];
+        password = requestSplit[1];
 
         ServiceFactory serviceFactory = ServiceFactory.getInstance();
         UserService userServiceImpl = serviceFactory.getUserService();

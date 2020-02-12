@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class UserDaoImpl implements UserDAO {
 
-    private String path = "E:\\EpmLibProject\\src\\resources\\UserFile.txt";
+    private String path = ".\\resources\\UserFile.txt";
 
     public UserDaoImpl() {
     }
