@@ -30,7 +30,8 @@ public class Registration implements Command {
             userServiceImpl.registration(new User(login, password));
             response = "welcome, you are registered as " + login;
         } catch (ServiceException e) {
-            response = e.getMessage();
+            response = e.getMessage();// никогда во view не отправляй сообщения подсистемы работы с исключениями
+            //. не окрывай свои секреты)))
         }
 
 
