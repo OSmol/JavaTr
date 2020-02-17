@@ -17,8 +17,10 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void addBook(Book book) throws ServiceException {
+        // над реализацией валидатора стоит подумать
         if (!BookValidator.validateAuthorName(book.getAuthor().getName())) throw new InvalidAuthorNameException("Author name is incorrect");
         if (!BookValidator.validateBookYear(book.getPublish())) throw new InvalidPublishException("Year of publishing is incorrect");
+        // и не жалей пустых строк, с ними читать код удобнее
         if (isBookIdExist(book.getId())) throw new BookIDExistException("Book with " + (book.getId()) + " id exist!");
         try {
             bookDao.addBook(book);
