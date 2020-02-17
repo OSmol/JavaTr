@@ -1,6 +1,8 @@
 package by.javatr.libproject.dao.exception;
 
 public class DAOInvalidFormatException extends DAOException {
+    // куда подевал serialversionUID?
+    
     public DAOInvalidFormatException() {
     }
 
